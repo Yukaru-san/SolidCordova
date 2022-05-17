@@ -10,6 +10,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
+	"cordova": "vite build && node scripts/postbuild.js && cordova run",
+	"cordova build": "vite build && node scripts/postbuild.js && cordova build",
     "android": "vite build && node scripts/postbuild.js && cordova run android"
   },
   "devDependencies": {
